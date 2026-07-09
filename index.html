@@ -1,173 +1,139 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--Cabeçalho-->
     <header class="header">
-        <h1>Minha Loja</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>Minha Loja</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-
     <main id="home">
-        <section class="products" id="produtos">
-            <h2>Produtoes em Destaque</h2>
+      <section class="products" id="produtos">
+        <h2>Produtos em Destaque</h2>
 
-            <!--Lista de categorias-->
-            <aside class="categories">
-                <h3>Categorias</h3>
-                <ul>
-                    <li>Eletrônicos</li>
-                    <li>Roupas</li>
-                    <li>Acessórios</li>
-                </ul>
-            </aside>
+        <!-- Lista de categorias-->
+        <aside class="categories">
+          <h3>Categorias</h3>
+          <ul>
+            <li>Eletrônicos</li>
+            <li>Roupas</li>
+            <li>Acessórios</li>
+          </ul>
+        </aside>
 
+        <!--Tabela de produtos-->
+        <section class="product-list">
+            <h3>Lista de produtos</h3>
+            
+        
 
-            <!--Tabela de produtos-->
-            <section class="product-list">
-                <h3>Lista de produtos</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Categoria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fone</td>
+              <td>250,00</td>
+              <td>Eletrônicos</td>
+            </tr>
 
+            <tr>
+              <td>Mouse</td>
+              <td>180,00</td>
+              <td>TI</td>
+            </tr>
 
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Categoria</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Fone</td>
-                            <td>250,00</td>
-                            <td>Eletrônicos</td>
-                        </tr>
-
-                        <tr>
-                            <td>Mouse</td>
-                            <td>180,00</td>
-                            <td>TI</td>
-                        </tr>
-
-                        <tr>
-                            <td>Teclado</td>
-                            <td>200,00</td>
-                            <td>TI</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!--Formulário-->
-            <section id="contato">
-                <h2>Cadastro/Contato</h2>
-                <form class="form-contato" method="post" action="servidor.php">
-
-                    <form method="post" action="servidor.php">
-
-        <br />
-        <label for="Nome"> Nome</label><br />
-        <input
-          type="text"
-          name="Nome"
-          id="Nome"
-          placeholder="Digite o seu Nome"
-          required
-          minlength="3"
-        /> <br><br>
-
-        <br />
-      <label for="email">Email</label><br />
-      <input
-        type="mail"
-        name="mail"
-        id="mail"
-        placeholder="Informe o seu E-mail"
-      />
-
-        <br />
-        <label for="senha">Senha</label><br />
-        <input
-          type="password"
-          name="senha"
-          id="senha"
-          placeholder="Informe a sua senha"
-          minlength="8"
-        /> <br><br>
-
-        <br />
-      <label for="idade">Idade</label><br />
-      <input
-        type="number"
-        name="idade"
-        id="idade"
-        placeholder="Informe o sua idade"
-        min="18"
-        max="120"
-      />
-
-    
-
-
-
-        <br />
-        <label for="Categoria">Categoria</label><br />
-        <select name="category" id="input-category">
-        <option value="">Selecione...</option>
-        <option value="eletronicos">Feminino</option>
-        <option value="ti">Masculino</option>
-      </select> <br><br>
-
-      <br><br>
-      Preferências<br>
-      <input
-      type="checkbox"
-      name="preferences"
-     id="check-offers"
-     value="pref"
-     checked
-     />
-     <label for="check-offers">Recebr ofertas</label>
-     <br><br>
-     <input
-     type="checkbox"
-     name
-
-      
-
-                </form>
-            </section>
-
-
-            <article>
-                <h3>Notebook</h3>
-                <p>Detalhes do Notebook</p>
-            </article>
-            <article>
-                <h3>Teclado</h3>
-                <p>Detalhes do Teclado</p>
-            </article>
+            <tr>
+              <td>Teclado</td>
+              <td>200,00</td>
+              <td>TI</td>
+            </tr>
+          </tbody>
+        </table>
         </section>
 
+        <!--Formulário-->           <!--PARA FAZER NOME-->
+        <section id="contato">
+          <h2>Cadastro / Contato</h2>
+          <form class="form-contato" method="post" action="servidor.php">
+             <fieldset>
+              <legend>Login</legend>
+            <label for="Nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required minlength="3"><br><br>
+            
 
+            <label for="senha">Senha</label>   <!--PARA FAZER SENHA-->
+            <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" minlength="8"><br><br>
+            </fieldset>
+
+            <br><br>
+            <fieldset>  <!--SELECIONAR ALGO-->
+            <select name="category" id="input-category">
+              <option value="">Selecione</option>
+              <option value="infantil">Infantil</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+            </select> <br><br>
+            </fieldset>
+
+            <br><br>
+            <fieldset>  <!--CLICAR NA BOLINHA DE ESCOLHA-->
+            <input type="radio" name="client-type" id="radio-pf" value="pf">
+            <label for="radio-pf">Pessoa Física</label> <br><br>
+            <input type="radio" name="client-type" id="radio-pj" value="pj">
+            <label for="radio-pj">Pessoa Jurídica</label> 
+            </fieldset>
+            <br><br>
+
+            <label for="Email">Email</label>  <!--EMAIL-->
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail"><br><br>
+
+            <label for="idade">Idade</label>  <!--IDADE-->
+            <input type="number" name="idade" placeholder="Informe sua idade" min="18" max="120"><br><br>
+
+
+            <input type="checkbox" name="preferences" id="check-news" value="news"> <!--QUADRADO DE ESCOLHA-->
+            <label for="check-offers">Newsletter</label> <br><br>
+            <input type="checkbox" name="preferences" id="check-offers" value="offers">
+            <label for="check-offers">Receber ofertas</label> 
+
+            <br><br>
+            <label for="msg">Mensagem</label><br>  <!--MENSAGEM-->
+            <textarea id="msg" name="msg" rows="5" cols="40" maxlength="150" placeholder="Deixe aqui a sua mensagem"></textarea>
+            <br>
+
+            <input type="submit" value="Enviar"> <!--BOTÃO DE ENVIAR-->
+          </form>
+        </section>
         
+        <article>
+          <h3>Notebook</h3>
+          <p>Detalhes do Notebook</p>
+        </article>
+        <article>
+          <h3>Teclado</h3>
+          <p>Detalhes do Teclado</p>
+        </article>
+      </section>
+      
     </main>
-    
-    <!--Rodapé-->
     <footer class="footer">
-        <p>Todos os direitos reservados</p>
+      <p>Todos os direitos reservados</p>
     </footer>
-
-</body>
+  </body>
 </html>
