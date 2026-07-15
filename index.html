@@ -1,201 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <!--Cabeçalho-->
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho-->
     <header class="header">
-      <h1>Minha Loja</h1>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+        <h1>Minha loja
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </h1>
+        </nav>
     </header>
 
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/gVBELZqOOIE?si=fHD2dsPE7ykuSYVF"
-      title="YouTube video player"
-      frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-        web-share;
-      "
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+    <!-- Banner -->
+ <section class="banner" aria-label="Destaque principal">
+ <h2>Promoções Imperdíveis</h2>
+ <p>Os melhores produtos com os melhores preços!</p>
+ </section>
 
-    <main id="home">
-      <section class="products" id="produtos">
-        <h2>Produtos em Destaque</h2>
+ <!-- Produtos com imagem -->
+<section id="produtos">
+<h2>Nossos Produtos</h2>
+
+
+
+    
+    
+    
+    <!-- Lista de categoria-->
+             <aside class=" categoria">
+                <h3>Categorias</h3>
+                <ul>
+                <li>Eletrônicos</li> 
+                <li>Roupas</li>
+                <li>Acessória</li>   
+             </ul>
+            </aside>
+            <article class="product-card">
+<figure>
+    
 
         
-  
 
-        <!-- Lista de categorias-->
-        <aside class="categories">
-          <h3>Categorias</h3>
-          <ul>
-            <li>Eletrônicos</li>
-            <li>Roupas</li>
-            <li>Acessórios</li>
-          </ul>
-        </aside>
+        <main id="home">
+        <section class="products" id="produtos">
+            <h2>Produtos em Destaques</h2>
+
+         <main id="home">
+        <section class="products" id="produtos">
+            
+   
+<img
+src="../img/Notbook.jpg"
+alt="NOTEBOOK DELL PRO 16 CORE 5 120U 8GB 512GB SSD W11P
+"
+width="300"
+height="300"
+loading="lazy"
+class="product-image"
+>
+<figcaption>Notebook Pro 16 Preto</figcaption>
+</figure>
+<h>Notebook Pro 16 Preto</h></h3>
+<p class="price">R$ 1.800,00</p>
+<button>Adicionar ao carrinho</button>
+</article>
+
+
+<article class="product-card">
+<figure>
+<img
+src="../img/images.jpg"
+alt="Teclado Gamer 106 Teclas Membrana Rgb
+"
+width="300"
+height="300"
+loading="lazy"
+class="product-image"
+>
+<figcaption>Teclado Gamer 106 </figcaption>
+</figure>
+<h>Teclado Gamer 106 </h></h3>
+<p class="price">R$550,00</p>
+<button>Adicionar ao carrinho</button>
+</article>
+
+<iframe 
+        
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.086005615255!2d-43.200903588386296!3d-22.910198379166133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783608400561!5m2!1spt-BR!2sbr"
+         width="150" 
+         height="150" 
+         style="border:0;"
+          allowfullscreen="" 
+          loading="lazy"
+           referrerpolicy="strict-origin-when-cross-origin">
+           <section class="store-location">
+
+
+
+        </iframe><br>
+          <section class="promo-video">
+            <iframe 
+            width="150" 
+            height="150" 
+            src="https://www.youtube.com/embed/D0pjgVTcyVA?si=ZoZw_T_429U8Apit"
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe><br>
 
         <!--Tabela de produtos-->
-        <section class="product-list">
-          <h3>Lista de produtos</h3>
+            <section class="product-list">
+                <h3>Lista de produtos</h3>
 
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Categoria</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Fone</td>
-                <td>250,00</td>
-                <td>Eletrônicos</td>
-              </tr>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Produtos</th>
+                            <th>Preço</th>
+                            <th>Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NOTEBOOK</td>
+                            <td>1.800,00</td>
+                            <td>TI</td>
+                
+                        </tr>
 
-              <tr>
-                <td>Mouse</td>
-                <td>180,00</td>
-                <td>TI</td>
-              </tr>
+                        <tr>
+                            <td>TECLADO</td>
+                            <td>550,00</td>
+                            <td>TI</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Formulário-->
+    <section id="contato">
+        <h2>Cadastro/ Contato</h2>
+        <form class="form-contato" method="post" action="servidor.php">
+<fieldset>
+           <br><br/>
+            <label for="Nome">Nome</label><br/>
+            <input 
+            type="text" 
+            name="Nome" 
+             id="Nome" 
+             placeholder="Informe a seu nome"
+            required
+            minlength="3"/>
 
-              <tr>
-                <td>Teclado</td>
-                <td>200,00</td>
-                <td>TI</td>
-              </tr>
-            </tbody>
-          </table>
+            <br><br />
+        <label for="senha">Senha</label><br />
+        <input 
+        type="password" 
+        name="senha" 
+        id="senha"
+        placeholder="Informe a sua Senha"
+        minlength="8"
+         />
+          <br><br/>
+         <label for="email">email</label><br/>
+            <input 
+            type="text" 
+            name="email" 
+             id="email" 
+             placeholder="Informe a seu email"
+            required/>
+            
+           </fieldset>
+<fieldset>
+    <br>
+        <label for="idade">Idade</label><br>
+        <input 
+        type="number"
+         name="idade" 
+         id="idade"
+         placeholder="Informe sua idade"
+         min="12"
+         max="21"
+         />      
+    
+    
+    <br/><br>
+            <select name="category" id="input-category">
+             <option value="">Selecione...</option>
+        
+        <option value="eletronicos">Eletrônicos</option>
+        <option value="ti">Tecnologia</option>
+            </select>
+            <br><br/>
+
+    
+   
+<input type="radio"name="client-type" id="radio-pf" value="pf">
+<label for="radio-pf">Pessoa Física</label>
+<br>
+<input type="radio"name="client-type"id="radio-pj"value="pj">
+<label for="radio-pj">Pessoa Jurídica</label>
+<br>
+      
+    
+
+ 
+<label for="msg">Mensagem</label><br/>
+<textarea
+name="msg" 
+id="msg"
+rows="5"
+cols="40"
+maxlength="150"
+placeholder="Deixar aqui a sua mensagem">
+</textarea>
+
+
+<br/>
+ <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+    </section>
+            </section>
+            <article>
+                <h3>Notbook</h3>
+                <p>Detalhes do Notbook</p>
+            </article>
+            <article>
+                <h3>Teclado</h3>
+                <p>Detalhes do Teclado</p>
+            </article>
         </section>
+        
 
-        <!--Formulário-->
-        <!--PARA FAZER NOME-->
-        <section id="contato">
-          <h2>Cadastro / Contato</h2>
-          <form class="form-contato" method="post" action="servidor.php">
-            <fieldset>
-              <legend>Login</legend>
-              <label for="Nome">Nome</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite o seu nome"
-                required
-                minlength="3"
-              /><br /><br />
 
-              <label for="senha">Senha</label>
-              <!--PARA FAZER SENHA-->
-              <input
-                type="password"
-                name="senha"
-                id="senha"
-                placeholder="Digite a sua senha"
-                minlength="8"
-              /><br /><br />
-            </fieldset>
-
-            <br /><br />
-            <fieldset>
-              <!--SELECIONAR ALGO-->
-              <select name="category" id="input-category">
-                <option value="">Selecione</option>
-                <option value="infantil">Infantil</option>
-                <option value="feminino">Feminino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-              <br /><br />
-            </fieldset>
-
-            <br /><br />
-            <fieldset>
-              <!--CLICAR NA BOLINHA DE ESCOLHA-->
-              <input type="radio" name="client-type" id="radio-pf" value="pf" />
-              <label for="radio-pf">Pessoa Física</label> <br /><br />
-              <input type="radio" name="client-type" id="radio-pj" value="pj" />
-              <label for="radio-pj">Pessoa Jurídica</label>
-            </fieldset>
-            <br /><br />
-
-            <label for="Email">Email</label>
-            <!--EMAIL-->
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Digite o seu e-mail"
-            /><br /><br />
-
-            <label for="idade">Idade</label>
-            <!--IDADE-->
-            <input
-              type="number"
-              name="idade"
-              placeholder="Informe sua idade"
-              min="18"
-              max="120"
-            /><br /><br />
-
-            <input
-              type="checkbox"
-              name="preferences"
-              id="check-news"
-              value="news"
-            />
-            <!--QUADRADO DE ESCOLHA-->
-            <label for="check-offers">Newsletter</label> <br /><br />
-            <input
-              type="checkbox"
-              name="preferences"
-              id="check-offers"
-              value="offers"
-            />
-            <label for="check-offers">Receber ofertas</label>
-
-            <br /><br />
-            <label for="msg">Mensagem</label><br />
-            <!--MENSAGEM-->
-            <textarea
-              id="msg"
-              name="msg"
-              rows="5"
-              cols="40"
-              maxlength="150"
-              placeholder="Deixe aqui a sua mensagem"
-            ></textarea>
-            <br />
-
-            <input type="submit" value="Enviar" />
-            <!--BOTÃO DE ENVIAR-->
-          </form>
-        </section>
-
-       
-      </section>
     </main>
+    <!--Rodapé-->
     <footer class="footer">
-      <p>Todos os direitos reservados</p>
+        <p>Todos os direitos reservados</p>
     </footer>
-  </body>
+
+
+</body>
 </html>
